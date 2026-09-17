@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f8ff">
+<title>퀵짝꿍 Clean 다운로드</title>
+<style>
+:root{
+  --blue:#1f8cff;
+  --blue2:#0a76ea;
+  --navy:#10213b;
+  --muted:#6f7d90;
+  --card:#ffffff;
+  --line:#dde5ef;
+  --soft:#f3f6fb;
+  --warn:#fff9e9;
+  --warnline:#f0d78a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif;
+  background:linear-gradient(180deg,#f4f8ff 0%,#ffffff 100%);
+  color:#152238;
+}
+.wrap{
+  width:min(94vw,680px);
+  margin:0 auto;
+  padding:24px 0 56px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:28px;
+  box-shadow:0 12px 34px rgba(31,71,120,.08);
+  overflow:hidden;
+}
+.inner{padding:30px}
+.kicker{
+  font-size:19px;
+  font-weight:800;
+  color:var(--blue);
+  margin-bottom:16px;
+}
+.hero{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  margin-bottom:14px;
+}
+.icon{
+  width:84px;height:84px;
+  border-radius:22px;
+  object-fit:cover;
+  flex:0 0 auto;
+  box-shadow:0 8px 24px rgba(255,143,0,.20);
+}
+h1{
+  font-size:38px;
+  line-height:1.18;
+  margin:0;
+  letter-spacing:-1.2px;
+}
+.desc{
+  color:var(--muted);
+  font-size:20px;
+  line-height:1.65;
+  margin:12px 0 22px;
+}
+.version{
+  background:var(--soft);
+  border:1px solid #dfe6f0;
+  border-radius:22px;
+  padding:22px 24px;
+  margin:18px 0;
+}
+.version strong{
+  display:block;
+  font-size:29px;
+  margin-bottom:8px;
+  letter-spacing:-.5px;
+}
+.version span{
+  color:var(--muted);
+  font-size:17px;
+}
+.status{
+  background:#f7f9fc;
+  border:1px solid #e5eaf1;
+  border-radius:22px;
+  padding:22px 24px;
+  margin:18px 0 26px;
+}
+.status b{
+  display:block;
+  font-size:20px;
+  margin-bottom:10px;
+}
+.status p{
+  margin:0;
+  font-size:17px;
+  line-height:1.6;
+  color:#29364a;
+}
+.notice{
+  background:var(--warn);
+  border:1px solid var(--warnline);
+  border-radius:22px;
+  padding:24px;
+  margin:18px 0 20px;
+}
+.notice h2{
+  margin:0 0 12px;
+  font-size:23px;
+}
+.notice p{
+  margin:0;
+  color:#2f3d50;
+  font-size:16px;
+  line-height:1.7;
+}
+.btn{
+  display:block;
+  width:100%;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  background:linear-gradient(180deg,var(--blue),var(--blue2));
+  border-radius:18px;
+  padding:18px 14px;
+  font-weight:800;
+  font-size:22px;
+  box-shadow:0 8px 20px rgba(31,140,255,.22);
+  margin-top:18px;
+}
+.btn:active{transform:translateY(1px)}
+.subbtn{
+  display:block;
+  width:100%;
+  text-align:center;
+  text-decoration:none;
+  color:#184e8f;
+  background:#eef6ff;
+  border:1px solid #cfe4ff;
+  border-radius:16px;
+  padding:15px 14px;
+  font-weight:700;
+  font-size:17px;
+  margin-top:12px;
+}
+.steps{
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px solid #edf1f5;
+}
+.steps h3{
+  margin:0 0 12px;
+  font-size:20px;
+}
+.steps ol{
+  margin:0;
+  padding-left:22px;
+  color:#344256;
+  line-height:1.8;
+  font-size:16px;
+}
+.small{
+  color:#8491a2;
+  text-align:center;
+  font-size:13px;
+  line-height:1.6;
+  margin-top:18px;
+}
+@media(max-width:520px){
+  .inner{padding:24px 20px}
+  h1{font-size:32px}
+  .desc{font-size:17px}
+  .icon{width:72px;height:72px;border-radius:18px}
+}
+</style>
+<script>
+function isNaverInApp(){
+  const ua=navigator.userAgent.toLowerCase();
+  return ua.includes('naver') || ua.includes('naver(inapp');
+}
+window.addEventListener('DOMContentLoaded',()=>{
+  const nav=document.getElementById('naverNotice');
+  if(isNaverInApp()) nav.style.display='block';
+});
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="inner">
+      <div class="kicker">퀵짝꿍 Clean 다운로드</div>
+
+      <div class="hero">
+        <img class="icon" src="quickmate-icon.png" alt="퀵짝꿍 Clean 아이콘">
+        <h1>퀵짝꿍<br>Clean</h1>
+      </div>
+
+      <p class="desc">
+        배달라이더가 직접 개발·테스트하는 Android 테스트버전입니다.
+        카카오 T 퀵과 IS플렉스 오더 확인을 더 빠르고 편하게 도와줍니다.
+      </p>
+
+      <div class="version">
+        <strong>V5.11 FINAL SAFE</strong>
+        <span>업데이트 2026.09.17 · Android · APK</span>
+      </div>
+
+      <div class="status">
+        <b>현재 상태</b>
+        <p>
+          카카오 T / IS플렉스 전체화면 감지 · 조건 필터 · 상세 자동진입 ·
+          예약 제외 · 같은 오더 중복 방지 · 금액 상승 시 재감지
+        </p>
+      </div>
+
+      <div class="notice" id="naverNotice">
+        <h2>네이버 앱에서 열렸나요?</h2>
+        <p>
+          네이버 앱 내부 브라우저에서는 APK 다운로드가 제한될 수 있습니다.
+          우측 상단 메뉴에서 <b>외부 브라우저로 열기</b>를 선택한 뒤
+          Chrome 또는 Samsung Internet에서 아래 다운로드 버튼을 눌러주세요.
+        </p>
+      </div>
+
+      <a class="btn" href="QuickMateClean_v5.11.apk" download>
+        퀵짝꿍 Clean V5.11 APK 다운로드
+      </a>
+
+      <a class="subbtn" href="#install">설치 방법 보기</a>
+
+      <div class="steps" id="install">
+        <h3>설치 방법</h3>
+        <ol>
+          <li>APK 파일을 다운로드합니다.</li>
+          <li>휴대폰의 다운로드 폴더에서 APK를 실행합니다.</li>
+          <li>처음 설치할 경우 해당 브라우저의 ‘알 수 없는 앱 설치’ 허용이 필요할 수 있습니다.</li>
+          <li>기존 사용자는 앱을 삭제하지 말고 그대로 업데이트 설치하세요.</li>
+          <li>설치 후 퀵짝꿍 접근성 서비스를 한 번 확인해 주세요.</li>
+        </ol>
+      </div>
+
+      <div class="small">
+        테스트 버전이므로 실제 운행 중에는 화면과 오더 내용을 직접 확인한 뒤 사용하세요.<br>
+        실제 수락/수행 버튼은 자동으로 누르지 않습니다.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
